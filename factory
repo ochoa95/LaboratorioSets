@@ -1,86 +1,37 @@
-import java.util.Scanner;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
-/**Universidad del Valle de Guatemala
+/**
+*Universidad del Valle de Guatemala
 *Algoritmos y Estructura de Datos
 *Sección: 10
-*Autores:
 *Jose Angel Ochoa Carne: 14230
 *Freddy José Ruíz Gatica Carné: 14592
-*
+*--------------------------------------------
 *03/09/2015
-*Clase Main:
-*Esta clase es la encargada de interactuar con el usuario y mostrarle
-*el resultado obtenido de haber distribuido a los desarrolladores
-*según sus habilidades.
+*Hoja de Trabajo 6
+*Clase: Factory
+*Funcionalidad:
+*Esta clase tiene como función generar uan instancia de 
+*las diferentes clases SET.  
 **/
 
-public class main{		
-	public static void main(String[] args) {	
-		String resp; 
-		String nombre;
-		String java;
-		String web;
-		String celular;
-		int desarrolladores =0;
-
-		Scanner leer = new Scanner(System.in);
-		Factory MiFactory = new Factory();
-		 
-		System.out.println("Porfavor escoge que tipo de Set utilizaras");
-		System.out.println("1. HashSet");
-		System.out.println("2. TreeSet");
-		System.out.println("3. LinkedHashSet");
-		resp = leer.nextLine();
-		
-		while  (resp != "HashSet" || resp != "TreeSet" || resp != "LinkedHashSet" ){
-		System.out.println("Porfavor escoge que tipo de Set utilizaras");
-		System.out.println("1. HashSet");
-		System.out.println("2. TreeSet");
-		System.out.println("3. LinkedHashSet");
-		resp = leer.nextLine();
-		//Organizadora<> nOrganizadora = new Organizadora<String>();
-	    
-		try {
-		
-		} 	
-		catch(Exception e){
-			
-		}
-		
-	}
-	Organizadora nOrganizadora= new Organizadora(resp);
+public class Factory<E>{
 	
-	while (desarrolladores != 10){
-		System.out.println("Porfavor ingresa el nombre del desarrollador");
-		nombre = leer.nextLine();
-		
-		System.out.println("Es programador de Java? (especifica 'si' o 'no')");
-		java = leer.nextLine();
-		System.out.println("Es programador de Web? (especifica 'si' o 'no')");
-		web = leer.nextLine();
-		System.out.println("Es programador de Celulares? (especifica 'si' o 'no')");
-		celular = leer.nextLine();
-		desarrolladores = desarrolladores + 1 ;
-	}
-}
-	public  static int verificar(String i){
-	    int val;
-	    int verify;
-		try {
-			val= Integer.parseInt(i);
-			if (val>0 && val <= 5){
-				System.out.println("Número correcto");
-				verify=1;
-			}
-			else {
-				System.out.println("El número es incorrecto");
-				verify=2;
-			} 
+	public Set<E> getSet(String SetType){
+
+		if(SetType.equals("HashSet")){
+			return (new HashSet<E>());
 		}
-		catch (Exception e){
-			System.out.println("No puedes ingresar una letra");
-			verify=2;
+		if(SetType.equals("TreeSet")){
+			return (new TreeSet<E>());
 		}
-		return verify;
-	}
+		if(SetType.equals("LinkedHashSet")){
+			return (new LinkedHashSet<E>());
+		}
+		else
+			return null;
+	}	
 }
