@@ -1,16 +1,19 @@
-# LaboratorioSets
-mport java.io.FileNotFoundException;
 import java.util.Scanner;
 
-/*
-Universidad del Valle de Guatemala
-Algoritmos y Estructura de Datos
-Sección: 10
-Jose Angel Ochoa Carne: 14230
-
-03/09/2015
-Hoja de Trabajo 6
-*/
+/**
+*Universidad del Valle de Guatemala
+*Algoritmos y Estructura de Datos
+*Sección: 10
+*Autores:
+*Jose Angel Ochoa Carne: 14230
+*Freddy José Ruíz Gatica Carné: 14592
+*Fecha: 03/09/2015
+*-----------------------------------------
+*Funcionalidad:
+*Esta clase es la encargada de interactuar con el usuario y mostrarle
+*el resultado obtenido de haber organizado a los desarrolladores según 
+*sus habilidades.
+**/
 
 public class main{
 	
