@@ -31,7 +31,5 @@ public class Factory<E>{
 		if(SetType.equals("LinkedHashSet")){
 			return (new LinkedHashSet<E>());
 		}
-		else
-			return null;
 	}	
 }
