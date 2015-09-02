@@ -1,0 +1,29 @@
+/*
+Universidad del Valle de Guatemala
+Algoritmos y Estructura de Datos
+Sección: 10
+Jose Angel Ochoa Carne: 14230
+
+03/09/2015
+Hoja de Trabajo 6
+*/
+
+public class factory<E>{
+	
+	public ADTsets<E> getSet(String SetType){
+
+		if(SetType.equals("HashSet")){
+			return (new HashSet<E>());
+		}
+		if(SetType.equals("TreeSet")){
+			return (new TreeSet<E>());
+		}
+		if(SetType.equals("LinkedHashSet")){
+			return (new LinkedHashSet<E>());
+		}
+
+	}
+
+	
+
+}
