@@ -18,42 +18,39 @@ import java.util.Scanner;
 public class main{
 	
 	public static void main(String[] args) {
-		String resp; 
+		int resp = 0; 
 		String nombre;
-		String java;
-		String web;
-		String celular;
+		int java;
+		int web;
+		int celular;
 		int desarrolladores = 0;
 		
 		Scanner leer = new Scanner(System.in);
-		factory MiFactory = new factory();
-		 
-		System.out.println("Porfavor escoge que tipo de Set utilizaras");
+		Scanner Lnombre = new Scanner(System.in);
+		
+		System.out.println("Porfavor escoge que tipo de Set utilizaras (Escoge Un Numero)");
 		System.out.println("1. HashSet");
 		System.out.println("2. TreeSet");
 		System.out.println("3. LinkedHashSet");
-		resp = leer.nextLine() 
-		
-		while  (resp != "HashSet" || resp != "TreeSet" || resp != "LinkedHashSet" ){
-			System.out.println("Porfavor escoge que tipo de Set utilizaras");
-		System.out.println("1. HashSet");
-		System.out.println("2. TreeSet");
-		System.out.println("3. LinkedHashSet");
-			resp = leer.nextLine()
-		
-		Organizadora<> nOrganizadora = new Organizadora<>();
-	    
-		
-	}
-	MiFactory.getSet(resp);
+		resp = leer.nextInt();
+		System.out.println(resp);
 	
+
 	while (desarrolladores != 10){
-		System.out.println("Porfavor ingresa el nombre del desarrollador");
-		nombre = leer.nextLine() 
-		
-		
-		
-		
-		desarrolladores = desarrolladores + 1 ;
+			System.out.println("Porfavor ingresa el nombre del desarrollador");
+			nombre = Lnombre.nextLine();
+
+			System.out.println("A continuacion en que ambientes puede trabajar el desarrollador");
+			System.out.println("Ingresa 1 si es desarrollador en Java");
+			java = leer.nextInt();
+			System.out.println("Ingresa 1 si es desarrollador en Web");
+			web = leer.nextInt();
+			System.out.println("Ingresa 1 si es desarrollador en Celulares");
+			celular = leer.nextInt();
+			
+				//funcion de ingreso//
+						
+			desarrolladores = desarrolladores + 1 ;	
+		}
 	}
 }
