@@ -23,7 +23,7 @@ public class main{
 		String java;
 		String web;
 		String celular;
-		int desarrolladores;
+		int desarrolladores = 0;
 		
 		Scanner leer = new Scanner(System.in);
 		factory MiFactory = new factory();
@@ -43,26 +43,17 @@ public class main{
 		
 		Organizadora<> nOrganizadora = new Organizadora<>();
 	    
-		try {
-		
-		} 	
-		catch(Exception e){
-			
-		}
 		
 	}
 	MiFactory.getSet(resp);
 	
-	while (desarrolladores =! 10){
+	while (desarrolladores != 10){
 		System.out.println("Porfavor ingresa el nombre del desarrollador");
 		nombre = leer.nextLine() 
 		
-		System.out.println("Es programador de Java? (especifica 'si' o 'no')");
-		java = leer.nextLine() 
-		System.out.println("Es programador de Web? (especifica 'si' o 'no')");
-		web = leer.nextLine() 
-		System.out.println("Es programador de Celulares? (especifica 'si' o 'no')");
-		celular = leer.nextLine() 
+		
+		
+		
 		desarrolladores = desarrolladores + 1 ;
 	}
 }
