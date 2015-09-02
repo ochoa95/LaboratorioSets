@@ -1,12 +1,17 @@
-/*
-Universidad del Valle de Guatemala
-Algoritmos y Estructura de Datos
-Sección: 10
-Jose Angel Ochoa Carne: 14230
-
-03/09/2015
-Hoja de Trabajo 6
-*/
+/**
+*Universidad del Valle de Guatemala
+*Algoritmos y Estructura de Datos
+*Sección: 10
+*Jose Angel Ochoa Carne: 14230
+*Freddy José Ruíz Gatica Carné: 14592
+*--------------------------------------------
+*03/09/2015
+*Hoja de Trabajo 6
+*Clase: Factory
+*Funcionalidad:
+*Esta clase tiene como función generar uan instancia de 
+*las diferentes clases SET.  
+**/
 
 public class factory<E>{
 	
