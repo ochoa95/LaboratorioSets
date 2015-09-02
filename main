@@ -1,1 +1,65 @@
 # LaboratorioSets
+mport java.io.FileNotFoundException;
+import java.util.Scanner;
+
+/*
+Universidad del Valle de Guatemala
+Algoritmos y Estructura de Datos
+Sección: 10
+Jose Angel Ochoa Carne: 14230
+
+03/09/2015
+Hoja de Trabajo 6
+*/
+
+public class main{
+	
+	public static void main(String[] args) {
+		String resp; 
+		String nombre;
+		String java;
+		String web;
+		String celular;
+		int desarrolladores;
+		
+		Scanner leer = new Scanner(System.in);
+		factory MiFactory = new factory();
+		 
+		System.out.println("Porfavor escoge que tipo de Set utilizaras");
+		System.out.println("1. HashSet");
+		System.out.println("2. TreeSet");
+		System.out.println("3. LinkedHashSet");
+		resp = leer.nextLine() 
+		
+		while  (resp != "HashSet" || resp != "TreeSet" || resp != "LinkedHashSet" ){
+			System.out.println("Porfavor escoge que tipo de Set utilizaras");
+		System.out.println("1. HashSet");
+		System.out.println("2. TreeSet");
+		System.out.println("3. LinkedHashSet");
+			resp = leer.nextLine()
+		
+		Organizadora<> nOrganizadora = new Organizadora<>();
+	    
+		try {
+		
+		} 	
+		catch(Exception e){
+			
+		}
+		
+	}
+	MiFactory.getSet(resp);
+	
+	while (desarrolladores =! 10){
+		System.out.println("Porfavor ingresa el nombre del desarrollador");
+		nombre = leer.nextLine() 
+		
+		System.out.println("Es programador de Java? (especifica 'si' o 'no')");
+		java = leer.nextLine() 
+		System.out.println("Es programador de Web? (especifica 'si' o 'no')");
+		web = leer.nextLine() 
+		System.out.println("Es programador de Celulares? (especifica 'si' o 'no')");
+		celular = leer.nextLine() 
+		desarrolladores = desarrolladores + 1 ;
+	}
+}
