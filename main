@@ -45,7 +45,7 @@ public class main{
 		nombre = Lnombre.nextLine();
 		
 		desarrolladores = desarrolladores + 1 ;
-		//funcion de ingreso//
+
 		System.out.println("A continuacion en que ambientes puede trabajar el desarrollador");
 		
 		while (java != 1 && java != 0){
@@ -62,13 +62,12 @@ public class main{
 		}
 		ordenadora.ordenSet(java, web, celular, nombre);
 	}
-	//Muestra de resultados
 	ordenadora.desJWC();
 	ordenadora.desJava();
 	ordenadora.desWoC();
-        ordenadora.desWC();
-        ordenadora.isSub();
+    ordenadora.desWC();
+    ordenadora.isSub();
 	ordenadora.maxDes();
-        ordenadora.maxDesAs();
+    ordenadora.maxDesAs();
 	}
 }
