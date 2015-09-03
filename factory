@@ -20,16 +20,19 @@ import java.util.TreeSet;
 
 public class Factory<E>{
 	
-	public Set<E> getSet(String SetType){
+	public Set<E> getSet(int i){
 
-		if(SetType.equals("HashSet")){
-			return (new HashSet<E>());
+		if(i == 1){
+			return new HashSet<E>();
 		}
-		if(SetType.equals("TreeSet")){
-			return (new TreeSet<E>());
+		if(i == 2){
+			return new TreeSet<E>();
 		}
-		if(SetType.equals("LinkedHashSet")){
-			return (new LinkedHashSet<E>());
+		if(i == 3){
+			return new LinkedHashSet<E>();
+		}
+		else {
+			return null;
 		}
 	}	
 }
