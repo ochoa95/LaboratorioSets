@@ -123,7 +123,7 @@ public class Organizadora{
 		System.out.println("El conjunto de desarrolaldores Java es subconjunto de desarrolladores Web ");
 		}
 	}
-	/**
+/**
 	 * Método maxDesAs
 	 * Funcionalidad:
 	 * Determina el conjunto con mayor tamaño e imprime
@@ -139,11 +139,11 @@ public class Organizadora{
 			System.out.println("El conjunto de mayor tamño es: desarrolladores Java");
 			System.out.println(pJava);
 		}
-		if (pWeb.size() > pJava.size() && pWeb.size() > pCelular.size()){
+		else if (pWeb.size() > pJava.size() && pWeb.size() > pCelular.size()){
 			System.out.println("El conjunto de mayor tamño es: desarrolladores Web");
 			System.out.println(pWeb);;
 		}
-		if (pCelular.size() > pWeb.size() && pCelular.size() > pJava.size()){
+		else if (pCelular.size() > pWeb.size() && pCelular.size() > pJava.size()){
 			System.out.println("El conjunto de mayor tamño es: desarrolladores Celulares");
 			System.out.println(pCelular);
 		}
@@ -168,12 +168,12 @@ public class Organizadora{
 			Set<String> tset=new TreeSet<String>(pJava);
 			System.out.println(tset);
 		}
-		if (pWeb.size() > pJava.size() && pWeb.size() > pCelular.size()){
+		else if (pWeb.size() > pJava.size() && pWeb.size() > pCelular.size()){
 			System.out.println("El conjunto de mayor tamño es: desarrolladores Web");
 			Set<String> tset=new TreeSet<String>(pWeb);
 			System.out.println(tset);
 		}
-		if (pCelular.size() > pWeb.size() && pCelular.size() > pJava.size()){
+		else if (pCelular.size() > pWeb.size() && pCelular.size() > pJava.size()){
 			System.out.println("El conjunto de mayor tamño es: desarrolladores Celulares");
 			Set<String> tset=new TreeSet<String>(pCelular);
 			System.out.println(tset);
