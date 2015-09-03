@@ -22,6 +22,7 @@ public class main{
 		String nombre;
 		int desarrolladores = 0;
 		
+		
 		Scanner leer = new Scanner(System.in);
 		Scanner Lnombre = new Scanner(System.in);
 		
@@ -33,34 +34,41 @@ public class main{
 			resp = leer.nextInt();
 			System.out.println(resp);
 		}
+		Organizadora ordenadora= new Organizadora(resp);
 
-	while (desarrolladores != 10){
+	while (desarrolladores != 3){
 		int java = 2;
 		int web = 2;
 		int celular = 2;
 		
-			System.out.println("Porfavor ingresa el nombre del desarrollador");
-			nombre = Lnombre.nextLine();
-			
-			desarrolladores = desarrolladores + 1 ;
-			//funcion de ingreso//
-			
-
-			
-			System.out.println("A continuacion en que ambientes puede trabajar el desarrollador");
+		System.out.println("Porfavor ingresa el nombre del desarrollador");
+		nombre = Lnombre.nextLine();
 		
-			while (java != 1 && java != 0){
-				System.out.println("Ingresa 1 si es desarrollador en Java o 0 si no lo es");
-				java = leer.nextInt();
-			}
-			while (web != 1 && web != 0){
-				System.out.println("Ingresa 1 si es desarrollador en Web");
-				web = leer.nextInt();
-			}
-			while (celular != 1 && celular != 0){
-				System.out.println("Ingresa 1 si es desarrollador en Celulares");
-				celular = leer.nextInt();
-			}	
+		desarrolladores = desarrolladores + 1 ;
+		//funcion de ingreso//
+		System.out.println("A continuacion en que ambientes puede trabajar el desarrollador");
+		
+		while (java != 1 && java != 0){
+			System.out.println("Ingresa 1 si es desarrollador en Java o 0 si no lo es");
+			java = leer.nextInt();
 		}
+		while (web != 1 && web != 0){
+			System.out.println("Ingresa 1 si es desarrollador en Web");
+			web = leer.nextInt();
+		}
+		while (celular != 1 && celular != 0){
+			System.out.println("Ingresa 1 si es desarrollador en Celulares");
+			celular = leer.nextInt();
+		}
+		ordenadora.ordenSet(java, web, celular, nombre);
+	}
+	//Muestra de resultados
+	ordenadora.desJWC();
+	ordenadora.desJava();
+	ordenadora.desWoC();
+        ordenadora.desWC();
+        ordenadora.isSub();
+	ordenadora.maxDes();
+        ordenadora.maxDesAs();
 	}
 }
