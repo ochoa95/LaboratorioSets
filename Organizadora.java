@@ -123,7 +123,7 @@ public class Organizadora{
 		System.out.println("El conjunto de desarrolaldores Java es subconjunto de desarrolladores Web ");
 		}
 	}
-/**
+	/**
 	 * Método maxDesAs
 	 * Funcionalidad:
 	 * Determina el conjunto con mayor tamaño e imprime
